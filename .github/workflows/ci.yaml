@@ -33,22 +33,6 @@ jobs:
       - name: Run test
         run: make test COVERAGE_DIR=/tmp/coverage
 
-      - name: Send goveralls coverage
-        uses: shogo82148/actions-goveralls@v1
-        with:
-          path-to-profile: /tmp/coverage/combined.txt
-          flag-name: Go-${{ matrix.go }}
-          parallel: true
-
-  check-coverage:
-    name: Check coverage
-    needs: [test]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: shogo82148/actions-goveralls@v1
-        with:
-          parallel-finished: true
-
   goreleaser:
     name: Release a new version
     needs: [lint, test]
