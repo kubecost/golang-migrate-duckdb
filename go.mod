@@ -1,4 +1,4 @@
-module github.com/kubecost/golang-migrate-duckdb
+module github.com/kubecost/golang-migrate-duckdb/v4
 
 replace github.com/golang-migrate/migrate/v4 => ./
 
@@ -137,7 +137,6 @@ require (
 	github.com/moby/term v0.5.0 // indirect
 	github.com/morikuni/aec v1.0.0 // indirect
 	github.com/mtibben/percent v0.2.1 // indirect
-	github.com/nxadm/tail v1.4.8 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.0.2 // indirect
 	github.com/pierrec/lz4/v4 v4.1.16 // indirect
