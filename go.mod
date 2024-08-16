@@ -31,7 +31,7 @@ require (
 	github.com/neo4j/neo4j-go-driver v1.8.3
 	github.com/snowflakedb/gosnowflake v1.11.0
 	github.com/stretchr/testify v1.9.0
-	github.com/xanzy/go-gitlab v0.107.0
+	github.com/xanzy/go-gitlab v0.15.0
 	go.mongodb.org/mongo-driver v1.16.1
 	go.uber.org/atomic v1.11.0
 	golang.org/x/oauth2 v0.22.0
@@ -197,4 +197,4 @@ require (
 	modernc.org/zappy v1.1.0 // indirect
 )
 
-go 1.21
+go 1.22.4
