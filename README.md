@@ -24,11 +24,11 @@ Database drivers run migrations. [Add a new database?](database/driver.go)
 * [PGX v5](database/pgx/v5)
 * [Redshift](database/redshift)
 * [Ql](database/ql)
-* [Cassandra](database/cassandra)
+* [Cassandra / ScyllaDB](database/cassandra)
 * [SQLite](database/sqlite)
 * [SQLite3](database/sqlite3) ([todo #165](https://github.com/mattes/migrate/issues/165))
 * [SQLCipher](database/sqlcipher)
-* [MySQL/ MariaDB](database/mysql)
+* [MySQL / MariaDB](database/mysql)
 * [Neo4j](database/neo4j)
 * [MongoDB](database/mongodb)
 * [CrateDB](database/crate) ([todo #170](https://github.com/mattes/migrate/issues/170))
@@ -39,6 +39,7 @@ Database drivers run migrations. [Add a new database?](database/driver.go)
 * [ClickHouse](database/clickhouse)
 * [Firebird](database/firebird)
 * [MS SQL Server](database/sqlserver)
+* [rqlite](database/rqlite)
 
 ### Database URLs
 
@@ -140,7 +141,7 @@ func main() {
     m, err := migrate.NewWithDatabaseInstance(
         "file:///migrations",
         "postgres", driver)
-    m.Up() // or m.Step(2) if you want to explicitly set the number of migrations to run
+    m.Up() // or m.Steps(2) if you want to explicitly set the number of migrations to run
 }
 ```
 
@@ -169,7 +170,7 @@ Each migration has an up and down migration. [Why?](FAQ.md#why-two-separate-file
 ## Coming from another db migration tool?
 
 Check out [migradaptor](https://github.com/musinit/migradaptor/).
-*Note: migradaptor is not affliated or supported by this project*
+*Note: migradaptor is not affiliated or supported by this project*
 
 ## Versions
 
