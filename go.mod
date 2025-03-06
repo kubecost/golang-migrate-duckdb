@@ -39,7 +39,7 @@ require (
 	github.com/xanzy/go-gitlab v0.15.0
 	go.mongodb.org/mongo-driver v1.7.5
 	go.uber.org/atomic v1.7.0
-	golang.org/x/oauth2 v0.22.0
+	golang.org/x/oauth2 v0.27.0
 	golang.org/x/tools v0.26.0
 	google.golang.org/api v0.169.0
 	modernc.org/ql v1.0.0
